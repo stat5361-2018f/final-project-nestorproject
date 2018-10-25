@@ -1,0 +1,16 @@
+---
+  title: Final Project Proposal
+  author: Travis Nestor
+  output: pdf_document
+  fontsize: 12pt
+  header-includes:
+    - \usepackage{setspace}\doublespacing
+---
+    
+  Using the Bootstrapping Method from this course, one can estimate sampling distribution of parameters and further calculate target distribution from the observed data. In practical application, this is commonly used in finance to construct yield curves from bonds. This then allows one to determine the price of a fixed-rate instrument and easily derive future and spot rates from it. 
+  
+  In this project, my goal is to create an algorithm of the bootstrapping method that generates a yield curve that successfully returns rates of bonds given dependent data. It will break down the process of bootsrapping a yield curve and what inputs are in relation to the theoretical bootstrapping process, and explaining why bootstraping is necessary to generate a yield curve. Similarly, there will be discussion on why this method is most effective and comparing it to other methods that are directly related to curve fitting processes involving interpolation or smoothing.  
+  
+  Furthermore, this project will discuss how the algorthim is affected by the number of inputs extrapolated from empirical finance data such as changes in volatility (variance) and will factor in a multivariate time-series approach that can help predict futre valuation. Similarly, since time dependency is needed to create data from discounted cash flows, the needed arises for forward substituion  in the construction of this algorithm.  
+  
+  In order to create this algorithm, data will be extracted from the US treasury website. Using this data we can test the accuracy of the algorithm as well as extrapolate predictions from the observed data using gaussian process prediction.
